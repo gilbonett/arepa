@@ -1,0 +1,100 @@
+*{
+    /* background-color: #00d4ff; */
+    margin: 16px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.svg {
+    background-image: url(img/arepa.jpg);
+ }
+
+.titulo {
+    text-align: center;
+     color: #ff1100;
+     
+}
+
+/* nav {
+    outline: 1px solid #ff1100; */
+/* } */
+
+.navegador {
+     /* outline: 1px solid blue; */
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     background-color: #52515c;
+     line-height: 5px;
+     text-align: center;
+ }
+
+ li {
+    /*  outline: 1px solid black */
+     display: inline-block;
+ }
+
+ a {
+    /*  outline: 1px solid brown; */
+     text-decoration: none;
+     color: #ff1100;
+     display: block;
+ }
+
+ a:hover {
+     color: white;
+ }
+
+ .container {
+     padding: 10px;
+     margin: auto;
+   
+ }
+ 
+ .item{
+    background-color: #52515c;
+ }
+
+ .item1 {
+    margin-top: -15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+
+ }
+
+.item2 {
+     margin-top: -15px;
+     display: flex;
+     justify-content: center;
+ }
+
+.item3 {
+    display: flex;
+    justify-items: flex-end;
+    text-align: center;
+}
+
+.ing1{
+text-indent: 19px;
+
+}
+.lista {
+    display: list-item;
+}
+
+.ingredientes {
+    display: flex;
+
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+}
+
+#pichome {
+    outline: solid 1px blue;
+display: inline-flex;
+height: 40px;
+}
