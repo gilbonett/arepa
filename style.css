@@ -95,6 +95,6 @@ text-indent: 19px;
 
 #pichome {
     outline: solid 1px blue;
-display: inline-flex;
-height: 40px;
+    display: inline-flex;
+    height: 40px;
 }
