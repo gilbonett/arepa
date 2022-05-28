@@ -1,100 +1,120 @@
 *{
-    /* background-color: #00d4ff; */
-    margin: 16px;
+    color: red;
+}
+
+/* fiz o navegador considerar a altura e largura contando o padding e o border dos elementos */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    font-family: sans-serif;
+}
+main{
+    flex-grow: 1;
 }
 
-.svg {
-    background-image: url(img/arepa.jpg);
- }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-.titulo {
+/*fiz meu footer dando background, rever na internet */
+.headfot {
+    width: 100%;
+    padding: 1rem;
+    background-color: #e2fc0e;
+    color: red;
+    position: fixed;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-     color: #ff1100;
-     
+    
 }
 
-/* nav {
-    outline: 1px solid #ff1100; */
-/* } */
+.navegador ul{
+    display: flex;
+    list-style: none;
+}
 
-.navegador {
-     /* outline: 1px solid blue; */
-     list-style: none;
-     padding: 0;
-     margin: 0;
-     background-color: #52515c;
-     line-height: 5px;
-     text-align: center;
+.navegador li {
+    padding: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+}
+/* TODO */
+@media screen and (max-width:760px) {
+ .headfot {
+     height: auto;
  }
+}
 
- li {
-    /*  outline: 1px solid black */
-     display: inline-block;
- }
+@media screen and (min-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+     }
+      }
 
- a {
-    /*  outline: 1px solid brown; */
-     text-decoration: none;
-     color: #ff1100;
-     display: block;
- }
+.heroimage {
+    max-width: 100%;
+background-image: url(https://www.recetasderechupete.com/wp-content/uploads/2019/11/Tipos-de-arepa-2-768x527.jpg);   
+}
 
- a:hover {
-     color: white;
- }
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 
- .container {
-     padding: 10px;
-     margin: auto;
-   
- }
- 
- .item{
-    background-color: #52515c;
- }
+}
 
- .item1 {
-    margin-top: -15px;
+h1{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.flex:nth-child(1) {
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
-
+  /*   margin-right: 100px; */
+}
+.flex:nth-child(2) {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border: 2px solid green;
  }
 
-.item2 {
-     margin-top: -15px;
-     display: flex;
-     justify-content: center;
- }
+.flex:nth-child(3) {
 
-.item3 {
     display: flex;
-    justify-items: flex-end;
-    text-align: center;
+    justify-content: center;
+    line-height: 20px;
+    margin: 50px;
+    margin-top: 5px;
+    text-align: justify;
 }
 
-.ing1{
-text-indent: 19px;
-
-}
-.lista {
-    display: list-item;
-}
-
-.ingredientes {
-    display: flex;
-
-}
-
-.container2 {
-    display: flex;
-    align-items: center;
-}
-
-#pichome {
-    outline: solid 1px blue;
-    display: inline-flex;
-    height: 40px;
+footer{
+    padding: 1rem;
+    background-color: #e2fc0e;
+    color: red;
 }
